@@ -68,7 +68,7 @@ document.querySelector('.contact input').addEventListener('input', (e) => {
 // moving element
 function mov(e) {
     const contact = document.getElementById(e);
-    if (window.scrollY >= contact.offsetTop - 600) {
+    if (window.scrollY >= contact.offsetTop - 400) {
         contact.style.opacity = "1";
         contact.style.bottom = "0";
     }
