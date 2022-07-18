@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark landing page</title>
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <nav>
+                <img src="./images/logo-bookmark.svg" alt="LOGO">
+                <div>
+                    <ul>
+                        <li><a href="#features">features</a></li>
+                        <li><a href="#pricing">pricing</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                    <a href="#" class="log">login</a>         
+                </div>
+                <button onclick="showManu()"><img src="./images/icon-hamburger.svg" alt=""></button>
+                <div class="manu" id="manu">
+                    <div class="close">
+                        <img src="./images/logo-bookmark.svg" alt="logo">
+                        <button onclick="closeManu()"><img src="./images/icon-close.svg" alt="close" ></button>
+                    </div>
+                    <ul>
+                        <li><a href="#features" onclick="closeManu()">features</a></li>
+                        <li><a href="#pricing" onclick="closeManu()">pricing</a></li>
+                        <li><a href="#contact" onclick="closeManu()">contact</a></li>
+                        <li><a href="#" class="log" onclick="closeManu()">login</a></li>
+                    </ul>
+                    <div class="icon">
+                        <img src="./images/icon-facebook.svg" alt="icon">
+                        <img src="./images/icon-twitter.svg" alt="icon">
+                    </div>
+                </div>
+            </nav>
+            <div class="show">
+                <div class="info" id="header-info">
+                    <h1>A Simple Bookmark <br> Manager</h1>
+                    <p>
+                        A clean and simple interface to organize your favourite
+                        websites. Open a new browser tab and see your sites load
+                        instantly. Try it for free.
+                    </p>
+                    <div class="link">
+                        <a href="#">Get it on Chrome</a>
+                        <a href="#">Get it on Firefox</a>
+                    </div>
+                </div>
+                <div class="img">
+                    <div class="be"></div>
+                    <img src="./images/illustration-hero.svg" alt="img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- start features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="title">
+                <h2>Features</h2>
+                <p>
+                    Our aim is to make it quick and easy for you to access your
+                    favourite websites. Your bookmarks sync between your devices
+                    so you can access them on the go.
+                </p>
+            </div>
+            <div >
+                <ul>
+                    <li><button onclick="show(0)" class="actie"> Simple Bookmarking </button></li>
+                    <li><button onclick="show(1)" > Speedy Searching </button></li>
+                    <li><button onclick="show(2)" > Easy Sharing </button></li>
+                </ul>
+                <div class="show flex">
+                    <div class="img">
+                        <div class="be"></div>
+                        <img src="./images/illustration-features-tab-1.svg" alt="img">
+                    </div>
+                    <div class="info">
+                        <h3>Bookmark in one click</h3>
+                        <p>
+                            Organize your bookmarks however you like. Our
+                            simple drag-and-drop interface gives you complete
+                            control over how you manage your favourite sites.
+                        </p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <div class="show">
+                    <div class="img">
+                        <div class="be"></div>
+                        <img src="./images/illustration-features-tab-2.svg" alt="img">
+                    </div>
+                    <div class="info">
+                        <h3>Bookmark in one click</h3>
+                        <p>
+                            Organize your bookmarks however you like. Our
+                            simple drag-and-drop interface gives you complete
+                            control over how you manage your favourite sites.
+                        </p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <div class="show">
+                    <div class="img">
+                        <div class="be"></div>
+                        <img src="./images/illustration-features-tab-3.svg" alt="img">
+                    </div>
+                    <div class="info">
+                        <h3>Bookmark in one click</h3>
+                        <p>
+                            Organize your bookmarks however you like. Our
+                            simple drag-and-drop interface gives you complete
+                            control over how you manage your favourite sites.
+                        </p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- start extension -->
+    <section class="extension" id="extension">
+        <div class="container">
+            <div class="title">
+                <h2>Download the extension</h2>
+                <p>
+                    Our aim is to make it quick and easy for you to access your
+                    favourite websites. Your bookmarks sync between your devices
+                    so you can access them on the go.
+                </p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card" style="--m: 0px;">
+                <img src="./images/logo-chrome.svg" class="icon" alt="icon">
+                <h5>Add to Chrome</h5>
+                <p>minimum version 62</p>
+                <img src="./images/bg-dots.svg" alt="line">
+                <a href="#">Add & install extension</a>
+            </div>
+            <div class="card" style="--m: 40px;">
+                <img src="./images/logo-firefox.svg" class="icon" alt="icon">
+                <h5>Add to Firefox</h5>
+                <p>minimum version 55</p>
+                <img src="./images/bg-dots.svg" alt="line">
+                <a href="#">Add & install extension</a>
+            </div>
+            <div class="card" style="--m: 80px;">
+                <img src="./images/logo-opera.svg" class="icon" alt="icon">
+                <h5>Add to Opera</h5>
+                <p>minimum version 46</p>
+                <img src="./images/bg-dots.svg" alt="line">
+                <a href="#">Add & install extension</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- start Questions -->
+    <section class="Questions" id="Questions">
+        <div class="container">
+            <div class="title">
+                <h2>Frequently Asked Questions</h2>
+                <p>
+                    Our aim is to make it quick and easy for you to access your
+                    favourite websites. Your bookmarks sync between your devices
+                    so you can access them on the go.
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div onclick="showQuestions(0)">
+                        <h5>What is Bookmark?</h5>
+                        <img src="./images/icon-arrow.svg" alt="icon-arrow">
+                    </div>
+                    <p class="height">
+                        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                        convallis ultricies. Mauris augue massa, ultricies non ligula.
+                        Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
+                </div>
+                <div class="card">
+                    <div onclick="showQuestions(1)">
+                        <h5>Is there a mobile app?</h5>
+                        <img src="./images/icon-arrow.svg" alt="icon-arrow">
+                    </div>
+                    <p class="height">
+                        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                        convallis ultricies. Mauris augue massa, ultricies non ligula.
+                        Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
+                </div>
+                <div class="card">
+                    <div onclick="showQuestions(2)">
+                        <h5>How can I request a new browser?</h5>
+                        <img src="./images/icon-arrow.svg" alt="icon-arrow">
+                    </div>
+                    <p class="height">
+                        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                        convallis ultricies. Mauris augue massa, ultricies non ligula.
+                        Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
+                </div>
+                <div class="card">
+                    <div onclick="showQuestions(3)">
+                        <h5>What about other Chromium browsers?</h5>
+                        <img src="./images/icon-arrow.svg" alt="icon-arrow">
+                    </div>
+                    <p class="height">
+                        Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                        ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                        convallis ultricies. Mauris augue massa, ultricies non ligula.
+                        Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                        Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                    </p>
+                </div>
+            </div>
+            <a href="#">More Info</a>
+        </div>
+    </section>
+
+    <!-- start contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h5>35,000+ ALREADY JOINED</h5>
+            <h2>Stay up-to-date with what we're doing</h2>
+            <form>
+                <div>
+                    <input type="text" name="email" placeholder="Enter your email address">
+                    <img src="./images/icon-error.svg" alt="">                    
+                    <span>Whoops, make sure it's an email</span>
+                </div>
+                <samp>Contact Us</samp>
+            </form>
+        </div>
+    </section>
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div>
+                <img src="./images/logo-bookmark.svg" alt="logo">
+                <ul>
+                    <li><a href="#features" onclick="closeManu()">features</a></li>
+                    <li><a href="#pricing" onclick="closeManu()">pricing</a></li>
+                    <li><a href="#contact" onclick="closeManu()">contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="./images/icon-facebook.svg" alt="icon-facebook">
+                <img src="./images/icon-twitter.svg" alt="icon-twitter">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/js.js"></script>
+</body>
+</html>
